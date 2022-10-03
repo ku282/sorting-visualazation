@@ -8,19 +8,6 @@ const addNewConfig = {
     }
 }
 
-export const getStreamsRequest = () => {
-    return {
-        type: types.GET_STREAMS_REQUEST
-    }
-}
-
-export const getStreamsSuccess = streams => {
-    return {
-        type: types.GET_STREAMS_SUCCESS,
-        payload: streams
-    }
-}
-
 export const getStreamsFailure = error => {
     return {
         type: types.GET_STREAMS_FAILURE,
