@@ -62,6 +62,12 @@ export const deleteCollegeRequest = () => {
     }
 }
 
+export const getCollegeRecord = users => {
+    return {
+        type: types.GET_COLLEGES_SUCCESS,
+        payload: users
+    }
+}
 export const deleteCollegeSuccess = college => {
     return {
         type: types.DELETE_COLLEGE_SUCCESS,
@@ -128,17 +134,6 @@ export const updateCollegeLiveStatusSuccess = college => {
         payload: college
     }
 }
-
-export const updateCollegeLiveStatusFailure = error => {
-    return {
-        type: types.UPDATE_COLLEGE_LIVE_STATUS_FAILURE,
-        payload: error
-    }
-}
-
-
-
-
 export const logout = () => {
     return {
         type: types.LOGOUT
